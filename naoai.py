@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 
-def askAi(prompt)
+def askAi(prompt):
     client = OpenAI(
         # This is the default and can be omitted
         api_key=os.environ.get("mario"),
