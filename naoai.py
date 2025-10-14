@@ -4,7 +4,7 @@ from openai import OpenAI
 def askAi(prompt):
     client = OpenAI(
         # This is the default and can be omitted
-        api_key=os.environ.get("mario"),
+        api_key="mario",
         base_url="http://10.13.100.50:1234/v1",
     )
     
@@ -16,4 +16,4 @@ def askAi(prompt):
     (response.output_text)
     return(response.output_text)
 
-print(askAi(input("What will you ask the ai?")))
+print(askAi(input("What will you ask the ai? ")))
