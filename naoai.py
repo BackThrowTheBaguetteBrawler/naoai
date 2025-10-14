@@ -16,4 +16,4 @@ def askAi(prompt):
     (response.output_text)
     return(response.output_text)
 
-print(askAi(input("What will you ask the ai?"))
+print(askAi(input("What will you ask the ai?")))
