@@ -16,8 +16,7 @@ def askAi(prompt):
     response = client.responses.create(
         model="gpt-4o",
     #    instructions="You are a smart assistant that talks like a pirate.",
-        input=f"Answer in a pirate accent: {prompt}",
-#        input=f"Answer in a gen-alpha skibidi sigma brainrot rizz accent: {prompt}",
+        input=f"You are a robot pirate captain named Scurvybones. Respond to: {prompt}",
     )
     (response.output_text)
     return(response.output_text)
